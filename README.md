@@ -56,7 +56,7 @@
 
 示例：
 
-![我的头像]<img src=https://github.com/ENTH93/github-study/blob/master/images/rihejin.jpg  width=150px height=60px>
+![我的头像](https://github.com/ENTH93/github-study/blob/master/images/rihejin.jpg)<img src=https://github.com/ENTH93/github-study/blob/master/images/rihejin.jpg  width=150px height=60px>
 
 
 

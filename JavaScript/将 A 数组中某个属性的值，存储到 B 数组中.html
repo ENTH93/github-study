@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const arr1 = [
+            { name: '千古壹号', age: '28' },
+            { name: '许嵩', age: '32' },
+        ];
+
+        // 将数组 arr1 中的 name 属性，存储到 数组 arr2 中
+        const arr2 = arr1.map(item => item.name);
+
+        // 将数组 arr1 中的 name、age这两个属性，改一下“键”的名字，存储到 arr3中
+        const arr3 = arr1.map(item => ({
+            myName: item.name,
+            myAge: item.age,
+        })); // 将数组 arr1 中的 name 属性，存储到 数组 arr2 中
+
+        console.log('arr1:' + JSON.stringify(arr1));
+        console.log('arr2:' + JSON.stringify(arr2));
+        console.log('arr3:' + JSON.stringify(arr3));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let numArr = [1, 2, 3];
+
+    numArr.forEach((item, index, arr) => {
+        arr[index] = arr[index] * 2;
+    });
+    console.log(JSON.stringify(numArr)); // 打印结果：[2,4,6]
+
+    // 2、数组的元素是引用数据类型时，直接修改对象
+    let objArr = [
+        { name: '千古壹号', age: 28 },
+        { name: '许嵩', age: 34 },
+    ];
+
+    objArr.forEach((item, index, arr) => {
+        arr[index] = {
+            name: '小明',
+            age: '10',
+        };
+    });
+    console.log(JSON.stringify(objArr)); // 打印结果：[{"name":"小明","age":"10"},{"name":"小明","age":"10"}]
+
+    // 3、数组的元素是引用数据类型时，修改对象的某个属性
+    let objArr2 = [
+        { name: '千古壹号', age: 28 },
+        { name: '许嵩', age: 34 },
+    ];
+
+    objArr2.forEach((item, index, arr) => {
+        arr[index].name = '小明';
+    });
+    console.log(JSON.stringify(objArr2)); // 打印结果：[{"name":"小明","age":28},{"name":"小明","age":34}]
+
+</script>
+
+<body>
+
+</body>
+
+</html>

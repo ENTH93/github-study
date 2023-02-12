@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>woshidiv</div>
+    <span>woshispan</span>
+    <ul>
+        <li>woshili</li>
+        <li>woshili</li>
+        <li>woshili</li>
+        <li>woshili</li>
+        <li>woshili</li>
+    </ul>
+    <ol>
+        <li>woshili</li>
+        <li>woshili</li>
+        <li>woshili</li>
+        <li>woshili</li>
+    </ol>
+
+    <div class="box">
+        <div class="erweima"></div>
+    </div>
+    <script>
+        // 1.父级节点parentNode
+        var erweima = document.querySelector('.erweima');
+        console.log(erweima.parentNode);
+
+
+        var ul = document.querySelector('ul');
+        var lis = ul.querySelectorAll('li');
+        // 2.子节点childNode所有的字节点 包含元素节点 文本节点等
+        console.log(ul.childNodes);
+        console.log(ul.childNodes[0].nodeType);
+        console.log(ul.childNodes[1].nodeType);
+        // 3.children 获取所有的子元素节点
+        console.log(ul.children);
+
+    </script>
+</body>
+
+</html>
